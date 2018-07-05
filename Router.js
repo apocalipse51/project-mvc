@@ -12,6 +12,9 @@ class Router {
         this.routesList = routesList;
     }
 
+    //Refactor the mimetype method
+    //Refactor the main route method
+
     tradeRoute(url, requestDealer, responseDealer, status = 200) {    
         const parsedUrl = pathUrl.parse(requestDealer.url);
         let pathname = path.join(__dirname, `${Settings.staticFolder}${parsedUrl.pathname}`);
